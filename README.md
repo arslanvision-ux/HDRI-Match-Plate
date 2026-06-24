@@ -48,6 +48,13 @@ A custom shelf tool is included to automatically ingest calibrated HDRIs and gen
 * Under the **Script** tab, copy and paste the entire contents of the `Houdini_Shelf_Tool.py` file included in this repository.
 * Click **Apply**. You can now click this shelf button to auto-generate Python LOPs from your exports!
 
+**What exactly does Solaris receive?**
+When you click the import button, Houdini will automatically generate USD nodes for:
+1. **Camera Metadata:** Automatically creates a USD Camera matching the plate's transform matrix, focal length, and aperture.
+2. **Lookdev Balls:** Generates perfectly shaded Chrome and 18% Grey spheres parented directly in front of the camera.
+3. **Extracted Sun & Masks:** Generates USD Distant/Sphere lights based on the directional sun vector and painted masks, mapping patched EXRs directly to the `GetTextureFileAttr()`.
+4. **Light AOV Synchronization:** When you tweak CG Light AOVs (Arnold/Karma) inside HDRI Match Plate (or via Nuke Live-Link), the export generates a JSON manifest. The Solaris script parses this JSON and automatically updates the `inputs:exposure` and `inputs:color` attributes of your original USD Light primitives in Solaris to perfectly match your comp!
+
 ## 🛠️ Technical Details
 
 * **Language:** Python 3.10+
