@@ -55,6 +55,14 @@ When you click the import button, Houdini will automatically generate USD nodes 
 3. **Extracted Sun & Masks:** Generates USD Distant/Sphere lights based on the directional sun vector and painted masks, mapping patched EXRs directly to the `GetTextureFileAttr()`.
 4. **Light AOV Synchronization:** When you tweak CG Light AOVs (Arnold/Karma) inside HDRI Match Plate (or via Nuke Live-Link), the export generates a JSON manifest. The Solaris script parses this JSON and automatically updates the `inputs:exposure` and `inputs:color` attributes of your original USD Light primitives in Solaris to perfectly match your comp!
 
+### 4. Blender Import Instructions
+Just like Solaris, HDRI Match Plate automatically writes native Python scripts for Blender whenever you export your calibration, lights, or masks!
+1. Open Blender and switch to the **Scripting** workspace at the top.
+2. Click **Open** and navigate to your HDRI Match Plate export folder.
+3. Select any of the generated Blender scripts (e.g., `blender_hdri_world.py`, `blender_sun_light.py`, or `blender_mask_lights.py`).
+4. Click the **Run Script** button (the play icon) in the text editor header.
+Blender will instantly build your World Shader Node tree, configure your AgX color management, and physically spawn your calibrated Sun and Area Lights!
+
 ## 🛠️ Technical Details
 
 * **Language:** Python 3.10+
