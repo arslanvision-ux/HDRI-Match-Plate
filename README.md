@@ -38,7 +38,7 @@ Integrates the tool directly into Foundry Nuke as a native PySide widget.
 
 ### 2. Standalone Executable
 A fully independent, pre-compiled Windows `.exe` application requiring **no Python installation or DCCs**.
-* Ideal for on-set data wranglers or texture artists.
+* Ideal for on-set data wranglers or lighting artists.
 * Simply extract the `HDRI_Match_Plate_Standalone` directory and run the executable.
 
 ## 🛠️ Technical Details
