@@ -41,6 +41,13 @@ A fully independent, pre-compiled Windows `.exe` application requiring **no Pyth
 * Ideal for on-set data wranglers or lighting artists.
 * Simply extract the `HDRI_Match_Plate_Standalone` directory and run the executable.
 
+### 3. Houdini Solaris Import Shelf
+A custom shelf tool is included to automatically ingest calibrated HDRIs and generated USD light metadata into Houdini.
+* Open Houdini and right-click an empty space on any Shelf -> **New Tool**.
+* Name it **HDRI Match Plate Import**.
+* Under the **Script** tab, copy and paste the entire contents of the `Houdini_Shelf_Tool.py` file included in this repository.
+* Click **Apply**. You can now click this shelf button to auto-generate Python LOPs from your exports!
+
 ## 🛠️ Technical Details
 
 * **Language:** Python 3.10+
