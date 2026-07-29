@@ -18,7 +18,7 @@
 
 With built-in native integration for Foundry Nuke (Docked Panel & Live-Link), as well as a fully compiled Standalone application, it effortlessly bridges the gap between on-set data wrangling, 3D Lookdev, and final compositing.
 
-Buy Me a Coffee: https://buymeacoffee.com/arslansvision
+Buy Me a Coffee: https://buymeacoffee.com/arslansvision/hdri-match-plat
 
 ## ✨ Key Features
 
