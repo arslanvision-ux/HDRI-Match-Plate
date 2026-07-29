@@ -18,6 +18,8 @@
 
 With built-in native integration for Foundry Nuke (Docked Panel & Live-Link), as well as a fully compiled Standalone application, it effortlessly bridges the gap between on-set data wrangling, 3D Lookdev, and final compositing.
 
+Buy Me a Coffee: https://buymeacoffee.com/arslansvision
+
 ## ✨ Key Features
 
 - 📸 **Physically Accurate Calibration:** Extract and apply EV exposures, White Balance, and Color space transforms (ACEScg compliant) to physically match HDRIs to reference plates.
